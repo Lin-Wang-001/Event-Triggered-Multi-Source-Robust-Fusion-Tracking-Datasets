@@ -11,9 +11,10 @@ The released data contain two parts:
 
 The spatial alignment dataset provides paired data for evaluating the spatial correspondence between multi-source vessel information and visual observations.
 ﻿
-The multi-source fusion tracking dataset contains camera images, radar images, AIS data, GNSS data, and visible videos for evaluating multi-source vessel tracking method. The radar and visual images in the dataset are as follows: 
+The multi-source fusion tracking dataset contains camera images, radar images, AIS data and GNSS data for evaluating multi-source vessel tracking method. The radar and visual images in the dataset are as follows: 
 
 <img width="1390" height="501" alt="搜狗高速浏览器截图20260925161953" src="https://github.com/user-attachments/assets/65e160b3-06c6-4107-857a-b04263d47ae1" />
+
 
 
 ## Dataset Description
@@ -33,9 +34,8 @@ The dataset includes:
 
 Camera image: visible-camera images stored in .jpg format.
 Radar image: radar images stored in .jpg format.
-AIS: AIS data stored in text files, including AISData_01.txt to AISData_03.txt.
+AIS: AIS data stored in text files, including AISData.csv.
 GNSS: navigation information stored in GNSSData.csv.
-Video: visible-camera video stored as visible_video.avi.
 
 ## Dataset Structure
 
@@ -56,14 +56,12 @@ Supporting Datasets/
     │   ├── xxx.jpg
     │   └── ...
     ├── AIS/
-    │   ├── AISData_01.txt
-    │   ├── AISData_02.txt
-    │   └── AISData_03.txt
-    ├── GNSS/
-    │   └── GNSSData.csv
-    └── Video/
-        └── visible_video.avi
+    │   └── AISData.csv
+    └── GNSS/
+        └── GNSSData.csv
+    
 ```
+
 
 ## Usage
 
